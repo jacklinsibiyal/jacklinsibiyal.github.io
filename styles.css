@@ -1,52 +1,178 @@
-body {
+/* Base styles */
+:root {
+    --coral: #FF6B6B;
+    --coral-dark: #FF5252;
+    --blue: #4A90E2;
+  }
+  
+  body {
     font-family: 'Arial', sans-serif;
-}
-
-.bg-coral {
-    background-color: #FF6B6B;
-}
-
-.bg-coral-dark {
-    background-color: #FF5252;
-}
-
-.text-coral {
-    color: #FF6B6B;
-}
-
-.text-blue-500 {
-    color: #3498DB;
-}
-
-a {
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Header styles */
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+  }
+  
+  header.scrolled {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+  }
+  
+  nav ul li a {
     text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.btn {
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  /* Button styles */
+  .btn {
     display: inline-block;
     padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
-    transition: transform 0.3s;
-}
-
-.btn-coral {
-    background-color: #FF6B6B;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-coral {
+    background-color: var(--coral);
     color: white;
-}
-
-.btn-blue {
-    background-color: #3498DB;
+  }
+  
+  .btn-coral:hover {
+    background-color: var(--coral-dark);
+  }
+  
+  .btn-blue {
+    background-color: var(--blue);
     color: white;
-}
-
-.btn-coral:hover {
-    background-color: #FF5252;
-}
-
-.btn-blue:hover {
-    background-color: #2980B9;
-}
+  }
+  
+  .btn-blue:hover {
+    background-color: #3A80D2;
+  }
+  
+  /* Section styles */
+  section {
+    padding: 4rem 0;
+  }
+  
+  #about {
+    background-color: #f9f9f9;
+  }
+  
+  /* Portfolio item styles */
+  .portfolio-item {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .portfolio-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Skills section styles */
+  .skill-category {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Contact form styles */
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  form button {
+    background-color: var(--coral);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: var(--coral-dark);
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    header .container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      width: 100%;
+      display: none;
+    }
+  
+    nav ul.show {
+      display: flex;
+    }
+  
+    nav ul li {
+      width: 100%;
+      text-align: center;
+    }
+  
+    nav ul li a {
+      display: block;
+      padding: 0.5rem 0;
+    }
+  
+    .mobile-menu-toggle {
+      display: block;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .fade-in {
+    animation: fadeIn 1s ease-out;
+  }
