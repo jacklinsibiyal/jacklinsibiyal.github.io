@@ -25,3 +25,28 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    transition: transform 0.3s;
+}
+
+.btn-coral {
+    background-color: #FF6B6B;
+    color: white;
+}
+
+.btn-blue {
+    background-color: #3498DB;
+    color: white;
+}
+
+.btn-coral:hover {
+    background-color: #FF5252;
+}
+
+.btn-blue:hover {
+    background-color: #2980B9;
+}
