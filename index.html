@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacklin Sibiyal - Data Scientist</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto p-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-coral">Jacklin Sibiyal</a>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#about" class="text-blue-500 hover:underline">About</a></li>
+                    <li><a href="#portfolio" class="text-blue-500 hover:underline">Portfolio</a></li>
+                    <li><a href="#skills" class="text-blue-500 hover:underline">Skills</a></li>
+                    <li><a href="#experience" class="text-blue-500 hover:underline">Experience</a></li>
+                    <li><a href="#contact" class="text-blue-500 hover:underline">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-12">
+        <div class="container mx-auto text-center">
+            <img src="path/to/professional-photo.jpg" alt="Jacklin Sibiyal" class="w-40 h-40 rounded-full mx-auto mb-4">
+            <h1 class="text-4xl font-bold">Hi, I'm Jacklin Sibiyal</h1>
+            <p class="mt-4 text-xl">A passionate Data Scientist and Machine Learning enthusiast. With a Bachelor of Technology in Information Technology from Meenakshi College of Engineering, I bring a blend of technical expertise and creativity to every project. I love building solutions that make a real impact, from chatbots to predictive models. When I'm not coding, you'll find me exploring new technologies, reading up on the latest AI advancements, and connecting with fellow data enthusiasts.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-12">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-8">Portfolio</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold mb-4">Chatbot Development (The VONG Moment)</h3>
+                    <p>Built a chatbot for The VONG Moment using Python and Vue.js, integrated with a custom Q&A system via Flask.</p>
+                    <p><strong>Technologies Used:</strong> Python, Vue.js, Flask</p>
+                    <a href="https://github.com/jacklinsibiyal/chatbot-development" class="text-blue-500 hover:underline">View on GitHub</a>
+                </div>
+                <!-- Repeat for other projects -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-12">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-8">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold mb-4">Technical Skills</h3>
+                    <ul class="list-disc pl-5">
+                        <li>Languages: Python, SQL</li>
+                        <li>Libraries: Scikit-learn, NLTK</li>
+                        <li>Frameworks: TensorFlow, HuggingFace</li>
+                        <li>Relevant Coursework: Data Structures & Algorithms, Machine Learning, Operating Systems, Object-Oriented Programming, Database Management System, Software Engineering</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold mb-4">Soft Skills</h3>
+                    <ul class="list-disc pl-5">
+                        <li>Problem Solving</li>
+                        <li>Analytical Thinking</li>
+                        <li>Communication</li>
+                        <li>Teamwork</li>
+                        <li>Adaptability</li>
+                        <li>Attention to Detail</li>
+                        <li>Time Management</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-12">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-8">Experience</h2>
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <h3 class="text-2xl font-bold mb-4">Machine Learning Intern</h3>
+                <p><strong>Company:</strong> NIELIT Tamil Nadu Chennai</p>
+                <p><strong>Duration:</strong> Sep 2024 - Present</p>
+                <ul class="list-disc pl-5">
+                    <li>Developed a sentiment analysis model using SVM on a Twitter dataset to classify tweets as positive or negative.</li>
+                    <li>Built a stock price prediction model using Linear Regression and XGBoost to predict Google stock prices.</li>
+                    <li>Gained hands-on experience in data preprocessing, feature engineering, and model evaluation for real-world data.</li>
+                </ul>
+            </div>
+            <!-- Repeat for other experiences -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-12">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-8">Contact Me</h2>
+            <form action="#" method="post" class="bg-white p-8 rounded-lg shadow-md">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 font-bold mb-2">Name</label>
+                    <input type="text" id="name" name="name" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
+                    <input type="email" id="email" name="email" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700 font-bold mb-2">Message</label>
+                    <textarea id="message" name="message" rows="4" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-coral text-white py-2 rounded-lg hover:bg-coral-dark">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 Jacklin Sibiyal. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
