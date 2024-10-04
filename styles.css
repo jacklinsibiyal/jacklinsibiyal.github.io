@@ -1,0 +1,27 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.bg-coral {
+    background-color: #FF6B6B;
+}
+
+.bg-coral-dark {
+    background-color: #FF5252;
+}
+
+.text-coral {
+    color: #FF6B6B;
+}
+
+.text-blue-500 {
+    color: #3498DB;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
