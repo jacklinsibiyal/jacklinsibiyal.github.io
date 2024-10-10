@@ -6,166 +6,171 @@
     <title>Jacklin Sibiyal - Data Scientist</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body class="bg-gray-100 text-gray-900 font-sans">
     <!-- Header -->
-    <header class="bg-white shadow-md">
+    <header class="bg-white shadow-md fixed w-full z-10">
         <div class="container mx-auto p-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-coral">Jacklin Sibiyal</a>
+            <a href="#" class="text-2xl font-bold text-primary-color">Jacklin Sibiyal</a>
+            <button id="menu-toggle" class="md:hidden">☰</button>
             <nav>
-                <ul class="flex space-x-4">
-                    <li><a href="#about" class="text-blue-500 hover:underline">About</a></li>
-                    <li><a href="#portfolio" class="text-blue-500 hover:underline">Portfolio</a></li>
-                    <li><a href="#skills" class="text-blue-500 hover:underline">Skills</a></li>
-                    <li><a href="#experience" class="text-blue-500 hover:underline">Experience</a></li>
-                    <li><a href="#contact" class="text-blue-500 hover:underline">Contact</a></li>
+                <ul class="flex space-x-4 md:flex md:space-x-4 md:visible hidden">
+                    <li><a href="#about" class="text-gray-700 hover:text-primary-color">About</a></li>
+                    <li><a href="#portfolio" class="text-gray-700 hover:text-primary-color">Portfolio</a></li>
+                    <li><a href="#skills" class="text-gray-700 hover:text-primary-color">Skills</a></li>
+                    <li><a href="#experience" class="text-gray-700 hover:text-primary-color">Experience</a></li>
+                    <li><a href="#contact" class="text-gray-700 hover:text-primary-color">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <main>
-    <!-- About Section -->
-    <section id="about" class="py-12">
-        <div class="container mx-auto text-center">
-            <img src="https://avatars.githubusercontent.com/u/128830717?v=4" alt="Jacklin Sibiyal" class="w-40 h-40 rounded-full mx-auto mb-4">
-            <h1 class="text-4xl font-bold">Hi, I'm Jacklin Sibiyal</h1>
-            <p class="mt-4 text-xl">A passionate Data Scientist and Machine Learning enthusiast. With a Bachelor of Technology in Information Technology from Meenakshi College of Engineering, I bring a blend of technical expertise and creativity to every project. I love building solutions that make a real impact, from chatbots to predictive models. When I'm not coding, you'll find me exploring new technologies, reading up on the latest AI advancements, and connecting with fellow data enthusiasts.</p>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/jacklinsibiyal/" class="btn btn-primary">LinkedIn</a>
-                <a href="https://github.com/jacklinsibiyal" class="btn btn-secondary">GitHub</a>
-            </div>
-        </div>
-    </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="py-12">
-        <div class="container">
-            <h2 class="text-3xl font-bold mb-8">Portfolio</h2>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <h3 class="text-2xl font-bold mb-4">Chatbot Development (The VONG Moment)</h3>
-                    <p>Built a chatbot for The VONG Moment using Python and Vue.js, integrated with a custom Q&A system via Flask.</p>
-                    <p><strong>Technologies Used:</strong> Python, Vue.js, Flask</p>
-                    <a href="https://github.com/jacklinsibiyal/chatbot-development" class="text-blue-500 hover:underline">View on GitHub</a>
-                </div>
-                <div class="portfolio-item">
-                    <h3 class="text-2xl font-bold mb-4">Sentiment Analysis using SVM (Twitter Dataset)</h3>
-                    <p>Implemented a sentiment analysis model using SVM to predict positive or negative sentiments based on tweet text.</p>
-                    <p><strong>Technologies Used:</strong> Python, Scikit-learn, NLTK</p>
-                    <a href="https://github.com/jacklinsibiyal/sentiment-analysis-svm" class="text-blue-500 hover:underline">View on GitHub</a>
-                </div>
-                <div class="portfolio-item">
-                    <h3 class="text-2xl font-bold mb-4">Stock Price Prediction (Google Stock)</h3>
-                    <p>Developed a stock price prediction model using Linear Regression and XGBoost to predict Google stock prices.</p>
-                    <p><strong>Technologies Used:</strong> Python, Scikit-learn, XGBoost</p>
-                    <a href="https://github.com/jacklinsibiyal/stock-price-prediction" class="text-blue-500 hover:underline">View on GitHub</a>
-                </div>
-                <div class="portfolio-item">
-                    <h3 class="text-2xl font-bold mb-4">Resume Screening</h3>
-                    <p>Developed a resume screening system using LSTM neural networks to analyze and categorize resumes.</p>
-                    <p><strong>Technologies Used:</strong> Python, TensorFlow, NLTK</p>
-                    <a href="https://github.com/jacklinsibiyal/resume-screening" class="text-blue-500 hover:underline">View on GitHub</a>
-                </div>
-                <div class="portfolio-item">
-                    <h3 class="text-2xl font-bold mb-4">Market Basket Insights</h3>
-                    <p>Conducted market basket analysis to uncover patterns and associations between products.</p>
-                    <p><strong>Technologies Used:</strong> Python, Pandas, Apriori</p>
-                    <a href="https://github.com/jacklinsibiyal/market-basket-analysis" class="text-blue-500 hover:underline">View on GitHub</a>
-                </div>
-                <div class="portfolio-item">
-                    <h3 class="text-2xl font-bold mb-4">YouTube Video Summarizer</h3>
-                    <p>Built a YouTube video summarizer using the Llama 3.1 70B model via Groq API and YouTube Transcript API.</p>
-                    <p><strong>Technologies Used:</strong> Python, Groq API, YouTube Transcript API</p>
-                    <a href="https://github.com/jacklinsibiyal/youtube-video-summarizer" class="text-blue-500 hover:underline">View on GitHub</a>
-                </div>
-                <div class="portfolio-item">
-                    <h3 class="text-2xl font-bold mb-4">Heart Failure Prediction</h3>
-                    <p>Developed a heart failure prediction model using Logistic Regression and Random Forest Regressor.</p>
-                    <p><strong>Technologies Used:</strong> Python, Scikit-learn</p>
-                    <a href="https://github.com/jacklinsibiyal/heart-failure-prediction" class="text-blue-500 hover:underline">View on GitHub</a>
+    <main class="mt-20">
+        <!-- About Section -->
+        <section id="about" class="py-12">
+            <div class="container mx-auto text-center">
+                <img src="https://avatars.githubusercontent.com/u/128830717?v=4" alt="Jacklin Sibiyal" class="w-40 h-40 rounded-full mx-auto mb-4 profile-pic">
+                <h1 class="text-4xl font-bold">Hi, I'm Jacklin Sibiyal</h1>
+                <p class="mt-4 text-xl">A passionate Data Scientist and Machine Learning enthusiast. With a Bachelor of Technology in Information Technology from Meenakshi College of Engineering, I bring a blend of technical expertise and creativity to every project. I love building solutions that make a real impact, from chatbots to predictive models. When I'm not coding, you'll find me exploring new technologies, reading up on the latest AI advancements, and connecting with fellow data enthusiasts.</p>
+                <div class="social-links flex justify-center space-x-4 mt-4">
+                    <a href="https://www.linkedin.com/in/jacklinsibiyal/" class="btn btn-primary">LinkedIn</a>
+                    <a href="https://github.com/jacklinsibiyal" class="btn btn-secondary">GitHub</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="py-12">
-        <div class="container mx-auto">
-            <h2 class="text-3xl font-bold mb-8">Skills</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-white p-8 rounded-lg shadow-md">
-                    <h3 class="text-2xl font-bold mb-4">Technical Skills</h3>
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="py-12">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold mb-8">Portfolio</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <h3 class="text-2xl font-bold mb-4">Chatbot Development (The VONG Moment)</h3>
+                        <p>Built a chatbot for The VONG Moment using Python and Vue.js, integrated with a custom Q&A system via Flask.</p>
+                        <p><strong>Technologies Used:</strong> Python, Vue.js, Flask</p>
+                        <a href="https://github.com/jacklinsibiyal/chatbot-development" class="text-blue-500 hover:underline">View on GitHub</a>
+                    </div>
+                    <div class="portfolio-item">
+                        <h3 class="text-2xl font-bold mb-4">Sentiment Analysis using SVM (Twitter Dataset)</h3>
+                        <p>Implemented a sentiment analysis model using SVM to predict positive or negative sentiments based on tweet text.</p>
+                        <p><strong>Technologies Used:</strong> Python, Scikit-learn, NLTK</p>
+                        <a href="https://github.com/jacklinsibiyal/sentiment-analysis-svm" class="text-blue-500 hover:underline">View on GitHub</a>
+                    </div>
+                    <div class="portfolio-item">
+                        <h3 class="text-2xl font-bold mb-4">Stock Price Prediction (Google Stock)</h3>
+                        <p>Developed a stock price prediction model using Linear Regression and XGBoost to predict Google stock prices.</p>
+                        <p><strong>Technologies Used:</strong> Python, Scikit-learn, XGBoost</p>
+                        <a href="https://github.com/jacklinsibiyal/stock-price-prediction" class="text-blue-500 hover:underline">View on GitHub</a>
+                    </div>
+                    <div class="portfolio-item">
+                        <h3 class="text-2xl font-bold mb-4">Resume Screening</h3>
+                        <p>Developed a resume screening system using LSTM neural networks to analyze and categorize resumes.</p>
+                        <p><strong>Technologies Used:</strong> Python, TensorFlow, NLTK</p>
+                        <a href="https://github.com/jacklinsibiyal/resume-screening" class="text-blue-500 hover:underline">View on GitHub</a>
+                    </div>
+                    <div class="portfolio-item">
+                        <h3 class="text-2xl font-bold mb-4">Market Basket Insights</h3>
+                        <p>Conducted market basket analysis to uncover patterns and associations between products.</p>
+                        <p><strong>Technologies Used:</strong> Python, Pandas, Apriori</p>
+                        <a href="https://github.com/jacklinsibiyal/market-basket-analysis" class="text-blue-500 hover:underline">View on GitHub</a>
+                    </div>
+                    <div class="portfolio-item">
+                        <h3 class="text-2xl font-bold mb-4">YouTube Video Summarizer</h3>
+                        <p>Built a YouTube video summarizer using the Llama 3.1 70B model via Groq API and YouTube Transcript API.</p>
+                        <p><strong>Technologies Used:</strong> Python, Groq API, YouTube Transcript API</p>
+                        <a href="https://github.com/jacklinsibiyal/youtube-video-summarizer" class="text-blue-500 hover:underline">View on GitHub</a>
+                    </div>
+                    <div class="portfolio-item">
+                        <h3 class="text-2xl font-bold mb-4">Heart Failure Prediction</h3>
+                        <p>Developed a heart failure prediction model using Logistic Regression and Random Forest Regressor.</p>
+                        <p><strong>Technologies Used:</strong> Python, Scikit-learn</p>
+                        <a href="https://github.com/jacklinsibiyal/heart-failure-prediction" class="text-blue-500 hover:underline">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-12">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold mb-8">Skills</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold mb-4">Technical Skills</h3>
+                        <ul class="list-disc pl-5">
+                            <li>Languages: Python, SQL</li>
+                            <li>Libraries: Scikit-learn, NLTK</li>
+                            <li>Frameworks: TensorFlow, HuggingFace</li>
+                            <li>Relevant Coursework: Data Structures & Algorithms, Machine Learning, Operating Systems, Object-Oriented Programming, Database Management System, Software Engineering</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold mb-4">Soft Skills</h3>
+                        <ul class="list-disc pl-5">
+                            <li>Problem Solving</li>
+                            <li>Analytical Thinking</li>
+                            <li>Communication</li>
+                            <li>Teamwork</li>
+                            <li>Adaptability</li>
+                            <li>Attention to Detail</li>
+                            <li>Time Management</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-12">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold mb-8">Experience</h2>
+                <div class="bg-white p-8 rounded-lg shadow-md mb-8">
+                    <h3 class="text-2xl font-bold mb-4">Machine Learning Intern</h3>
+                    <p><strong>Company:</strong> NIELIT Tamil Nadu Chennai</p>
+                    <p><strong>Duration:</strong> Sep 2024 - Present</p>
                     <ul class="list-disc pl-5">
-                        <li>Languages: Python, SQL</li>
-                        <li>Libraries: Scikit-learn, NLTK</li>
-                        <li>Frameworks: TensorFlow, HuggingFace</li>
-                        <li>Relevant Coursework: Data Structures & Algorithms, Machine Learning, Operating Systems, Object-Oriented Programming, Database Management System, Software Engineering</li>
+                        <li>Developed a sentiment analysis model using SVM on a Twitter dataset to classify tweets as positive or negative.</li>
+                        <li>Built a stock price prediction model using Linear Regression and XGBoost to predict Google stock prices.</li>
+                        <li>Gained hands-on experience in data preprocessing, feature engineering, and model evaluation for real-world data.</li>
                     </ul>
                 </div>
                 <div class="bg-white p-8 rounded-lg shadow-md">
-                    <h3 class="text-2xl font-bold mb-4">Soft Skills</h3>
+                    <h3 class="text-2xl font-bold mb-4">Prompt Engineer Intern</h3>
+                    <p><strong>Company:</strong> The VONG Moment (Remote)</p>
+                    <p><strong>Duration:</strong> Mar 2024 - Present</p>
                     <ul class="list-disc pl-5">
-                        <li>Problem Solving</li>
-                        <li>Analytical Thinking</li>
-                        <li>Communication</li>
-                        <li>Teamwork</li>
-                        <li>Adaptability</li>
-                        <li>Attention to Detail</li>
-                        <li>Time Management</li>
+                        <li>Designed and built an AI-powered chatbot for The VONG Moment, enhancing customer interaction and support on the platform.</li>
+                        <li>Utilized prompt engineering techniques to create tailored solutions for various language models.</li>
+                        <li>Led a team to design visual assets for marketing campaigns, leveraging AI-based tools for efficiency.</li>
                     </ul>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="py-12">
-        <div class="container mx-auto">
-            <h2 class="text-3xl font-bold mb-8">Experience</h2>
-            <div class="bg-white p-8 rounded-lg shadow-md">
-                <h3 class="text-2xl font-bold mb-4">Machine Learning Intern</h3>
-                <p><strong>Company:</strong> NIELIT Tamil Nadu Chennai</p>
-                <p><strong>Duration:</strong> Sep 2024 - Present</p>
-                <ul class="list-disc pl-5">
-                    <li>Developed a sentiment analysis model using SVM on a Twitter dataset to classify tweets as positive or negative.</li>
-                    <li>Built a stock price prediction model using Linear Regression and XGBoost to predict Google stock prices.</li>
-                    <li>Gained hands-on experience in data preprocessing, feature engineering, and model evaluation for real-world data.</li>
-                </ul>
+        <!-- Contact Section -->
+        <section id="contact" class="py-12">
+            <div class="container mx-auto max-w-2xl">
+                <h2 class="text-3xl font-bold mb-8">Contact Me</h2>
+                <form action="#" method="post" class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 font-bold mb-2">Name</label>
+                        <input type="text" id="name" name="name" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-color">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-color">
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-gray-700 font-bold mb-2">Message</label>
+                        <textarea id="message" name="message" rows="4" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-color"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-primary-color text-white py-2 rounded-lg hover:bg-coral-dark transition duration-300">Send Message</button>
+                </form>
             </div>
-            <div class="bg-white p-8 rounded-lg shadow-md mt-8">
-                <h3 class="text-2xl font-bold mb-4">Prompt Engineer Intern</h3>
-                <p><strong>Company:</strong> The VONG Moment (Remote)</p>
-                <p><strong>Duration:</strong> Mar 2024 - Present</p>
-                <ul class="list-disc pl-5">
-                    <li>Designed and built an AI-powered chatbot for The VONG Moment, enhancing customer interaction and support on the platform.</li>
-                    <li>Utilized prompt engineering techniques to create tailored solutions for various language models.</li>
-                    <li>Led a team to design visual assets for marketing campaigns, leveraging AI-based tools for efficiency.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-12">
-        <div class="container mx-auto">
-            <h2 class="text-3xl font-bold mb-8">Contact Me</h2>
-            <form action="#" method="post" class="bg-white p-8 rounded-lg shadow-md">
-                <div class="mb-4">
-                    <label for="name" class="block text-gray-700 font-bold mb-2">Name</label>
-                    <input type="text" id="name" name="name" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-                </div>
-                <div class="mb-4">
-                    <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
-                    <input type="email" id="email" name="email" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-                </div>
-                <div class="mb-4">
-                    <label for="message" class="block text-gray-700 font-bold mb-2">Message</label>
-                    <textarea id="message" name="message" rows="4" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-                </div>
-                <button type="submit" class="w-full bg-coral text-white py-2 rounded-lg hover:bg-coral-dark transition duration-300">Send Message</button>
-            </form>
-        </div>
-    </section>
+        </section>
     </main>
 
     <!-- Footer -->
@@ -177,7 +182,7 @@
 
     <!-- JavaScript for interactivity -->
     <script>
-            document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function() {
             const menuToggle = document.getElementById('menu-toggle');
             const navMenu = document.querySelector('nav ul');
 
@@ -217,6 +222,6 @@
                 }
             });
         });
-        </script>
+    </script>
 </body>
 </html>
